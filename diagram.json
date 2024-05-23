@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Angel Velasquez",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -124.2, "left": -48.6, "attrs": {} },
+    { "type": "chip-mq2-gas-sensor", "id": "mq2", "top": 145.02, "left": 283.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "mq2:VCC", "uno:5V", "red", [] ],
+    [ "mq2:GND", "uno:GND.2", "black", [] ],
+    [ "mq2:A0", "uno:A1", "green", [] ],
+    [ "mq2:D0", "uno:2", "gold", [ "h-38.4", "v-288" ] ]
+  ],
+  "dependencies": {}
+}
