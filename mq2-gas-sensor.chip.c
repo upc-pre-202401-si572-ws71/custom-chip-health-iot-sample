@@ -28,8 +28,8 @@ void chip_timer_event(void *user_data) {
     pin_dac_write(chip->pin_ao, voltage);
     if(voltage>threshold_v)
       pin_write(chip->pin_do, HIGH);
-  } else {
-    pin_write(chip->pin_do, LOW);
+    else
+      pin_write(chip->pin_do, LOW);
   }
 }
 
